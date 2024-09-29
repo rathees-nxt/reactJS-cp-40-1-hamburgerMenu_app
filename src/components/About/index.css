@@ -1,0 +1,31 @@
+/* Write your CSS here */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+.image-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-sm-img {
+  width: 80%;
+  max-width: 400px;
+}
+.about-lg-img {
+  width: 100%;
+  max-width: 1110px;
+}
+@media screen and (min-width: 768px) {
+  .about-sm-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-lg-img {
+    display: none;
+  }
+}
